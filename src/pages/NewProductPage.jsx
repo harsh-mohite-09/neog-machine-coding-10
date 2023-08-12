@@ -89,6 +89,7 @@ const NewProductPage = () => {
             <FormLabel>Price</FormLabel>
             <Input
               type="number"
+              min={0}
               name="price"
               value={productDetails.price}
               onChange={handleInputs}
@@ -98,6 +99,7 @@ const NewProductPage = () => {
             <FormLabel>Stock</FormLabel>
             <Input
               type="number"
+              min={0}
               name="stock"
               value={productDetails.stock}
               onChange={handleInputs}
@@ -125,6 +127,7 @@ const NewProductPage = () => {
             <FormLabel>Delivered</FormLabel>
             <Input
               type="number"
+              min={0}
               name="delivered"
               value={productDetails.delivered}
               onChange={handleInputs}
